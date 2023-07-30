@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Apple Bowl",
+    "level": 1,
+    "ingredients": {
+      "apple": 1
+    }
+  },
+  {
+    "name": "Boiled Egg",
+    "level": 5,
+    "ingredients": {
+      "egg": 1,
+      "fuel": 1
+    }
+  }
+]
