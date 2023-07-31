@@ -1,17 +1,510 @@
 [
   {
+    "name": "Mashed Potatoes",
+    "level": 1,
+    "score": 2,
+    "ingredients": {
+      "potato": 2,
+      "fuel": 2
+    }
+  },
+  {
+    "name": "Mint Tea",
+    "level": 1,
+    "score": 1,
+    "ingredients": {
+      "mint": 2,
+      "fuel": 2
+    }
+  },
+  {
+    "name": "Egg Dippy",
+    "level": 1,
+    "score": 3,
+    "ingredients": {
+      "egg": 1,
+      "bread": 1,
+      "fuel": 2
+    }
+  },
+  {
+    "name": "Strawberry Bowl",
+    "level": 1,
+    "score": 2,
+    "ingredients": {
+      "strawberry": 1
+    }
+  },
+  {
+    "name": "Corn on the Cob",
+    "level": 1,
+    "score": 2,
+    "ingredients": {
+      "corn": 1,
+      "butter": 1,
+      "fuel": 1
+    }
+  },
+  {
+    "name": "Boiled Egg",
+    "level": 1,
+    "score": 2,
+    "ingredients": {
+      "egg": 1,
+      "fuel": 1
+    }
+  },
+  {
+    "name": "Mushroom Soup",
+    "level": 1,
+    "score": 3,
+    "ingredients": {
+      "onion": 1,
+      "mushroom": 1,
+      "fuel": 3
+    }
+  },
+  {
+    "name": "Chamomile Tea",
+    "level": 1,
+    "score": 2,
+    "ingredients": {
+      "chamomile": 1,
+      "sugar": 1,
+      "fuel": 1
+    }
+  },
+  {
+    "name": "Tomato Soup",
+    "level": 1,
+    "score": 4,
+    "ingredients": {
+      "herbs": 1,
+      "milk": 1,
+      "tomato": 2,
+      "fuel": 3
+    }
+  },
+  {
+    "name": "Corn Flakes",
+    "level": 1,
+    "score": 3,
+    "ingredients": {
+      "corn": 1,
+      "milk": 1,
+      "fuel": 1
+    }
+  },
+  {
+    "name": "Roasted Potatoes",
+    "level": 1,
+    "score": 4,
+    "ingredients": {
+      "herbs": 1,
+      "milk": 1,
+      "potato": 2,
+      "fuel": 3
+    }
+  },
+  {
     "name": "Apple Bowl",
     "level": 1,
+    "score": 2,
     "ingredients": {
       "apple": 1
     }
   },
   {
-    "name": "Boiled Egg",
-    "level": 5,
+    "name": "French Onion Soup",
+    "level": 2,
+    "score": 6,
     "ingredients": {
+      "bread": 1,
+      "onion": 2,
+      "butter": 2,
+      "cheese": 1,
+      "fuel": 4
+    }
+  },
+  {
+    "name": "Hash Browns",
+    "level": 3,
+    "score": 5,
+    "ingredients": {
+      "flour": 1,
+      "potato": 2,
+      "onion": 1,
+      "fuel": 3
+    }
+  },
+  {
+    "name": "Pepper Pasta",
+    "level": 3,
+    "score": 5,
+    "ingredients": {
+      "pasta": 1,
+      "pepper": 2,
+      "garlic": 2,
+      "fuel": 5
+    }
+  },
+  {
+    "name": "Grilled Cheese",
+    "level": 3,
+    "score": 4,
+    "ingredients": {
+      "cheese": 1,
+      "bread": 2,
+      "fuel": 3
+    }
+  },
+  {
+    "name": "Plate of Fries",
+    "level": 3,
+    "score": 4,
+    "ingredients": {
+      "potato": 2,
+      "herbs": 1,
+      "fuel": 2
+    }
+  },
+  {
+    "name": "Honey Sage Tea",
+    "level": 3,
+    "score": 3,
+    "ingredients": {
+      "lemon": 1,
+      "sage": 2,
+      "honey": 1,
+      "fuel": 2
+    }
+  },
+  {
+    "name": "Microbaked Apple",
+    "level": 3,
+    "score": 5,
+    "ingredients": {
+      "butter": 1,
+      "apple": 1,
+      "sugar": 1,
+      "fuel": 2
+    }
+  },
+  {
+    "name": "Popcorn",
+    "level": 3,
+    "score": 4,
+    "ingredients": {
+      "butter": 1,
+      "corn": 1,
+      "fuel": 2
+    }
+  },
+  {
+    "name": "Snappy Beet Chips",
+    "level": 3,
+    "score": 4,
+    "ingredients": {
+      "herbs": 1,
+      "beets": 2,
+      "fuel": 3
+    }
+  },
+  {
+    "name": "Chilly Mac",
+    "level": 3,
+    "score": 6,
+    "ingredients": {
+      "tomato": 2,
+      "beans": 1,
+      "cheese": 1,
+      "pasta": 1,
+      "fuel": 5
+    }
+  },
+  {
+    "name": "Pasta Agilo e Olio",
+    "level": 3,
+    "score": 6,
+    "ingredients": {
+      "garlic": 2,
+      "pasta": 1,
+      "cheese": 1,
+      "herbs": 1,
+      "fuel": 5
+    }
+  },
+  {
+    "name": "Peach Iced Tea",
+    "level": 3,
+    "score": 3,
+    "ingredients": {
+      "sage": 2,
+      "peach": 1,
+      "honey": 1,
+      "fuel": 3
+    }
+  },
+  {
+    "name": "Citrus Peach Cooler",
+    "level": 3,
+    "score": 3,
+    "ingredients": {
+      "peach": 2,
+      "strawberry": 1,
+      "lemon": 1
+    }
+  },
+  {
+    "name": "Hearty Soup",
+    "level": 3,
+    "score": 7,
+    "ingredients": {
+      "carrot": 2,
+      "bean": 1,
+      "potato": 2,
+      "herbs": 1,
+      "onion": 1,
+      "fuel": 7
+    }
+  },
+  {
+    "name": "Grilled Garlic Bread",
+    "level": 3,
+    "score": 5,
+    "ingredients": {
+      "garlic": 1,
+      "bread": 1,
+      "butter": 1,
+      "fuel": 2
+    }
+  },
+  {
+    "name": "Fluffy Pancakes",
+    "level": 4,
+    "score": 8,
+    "ingredients": {
+      "syrup": 1,
+      "blackberry": 2,
+      "milk": 1,
+      "flour": 1,
+      "butter": 1,
+      "fuel": 3
+    }
+  },
+  {
+    "name": "Butter Croissant",
+    "level": 4,
+    "score": 8,
+    "ingredients": {
+      "strawberry": 2,
+      "milk": 1,
+      "butter": 1,
+      "egg": 1,
+      "flour": 1,
+      "fuel": 6
+    }
+  },
+  {
+    "name": "Bread Pudding",
+    "level": 4,
+    "score": 6,
+    "ingredients": {
+      "honey": 2,
+      "milk": 1,
+      "bread": 1,
+      "fuel": 2
+    }
+  },
+  {
+    "name": "Plum Galette",
+    "level": 4,
+    "score": 8,
+    "ingredients": {
+      "lemon": 1,
+      "syrup": 1,
+      "plum": 2,
+      "flour": 1,
+      "butter": 1,
+      "fuel": 4
+    }
+  },
+  {
+    "name": "Spinach Stromboli",
+    "level": 4,
+    "score": 8,
+    "ingredients": {
+      "garlic": 1,
+      "herbs": 2,
+      "cheese": 1,
+      "flour": 1,
+      "spinach": 1,
+      "fuel": 4
+    }
+  },
+  {
+    "name": "Pickled Beet Eggs",
+    "level": 4,
+    "score": 5,
+    "ingredients": {
+      "beets": 1,
       "egg": 1,
       "fuel": 1
+    }
+  },
+  {
+    "name": "Plum Schnapps",
+    "level": 4,
+    "score": 2,
+    "ingredients": {
+      "sugar": 1,
+      "plum": 1,
+      "fuel": 2
+    }
+  },
+  {
+    "name": "Spicy Linden Tea",
+    "level": 4,
+    "score": 3,
+    "ingredients": {
+      "honey": 1,
+      "ginger": 1,
+      "linden": 2,
+      "fuel": 3
+    }
+  },
+  {
+    "name": "Peach Cobbler",
+    "level": 4,
+    "score": 7,
+    "ingredients": {
+      "sugar": 1,
+      "lemon": 1,
+      "flour": 2,
+      "peach": 2,
+      "fuel": 3
+    }
+  },
+  {
+    "name": "Creamy Baked Cheese",
+    "level": 4,
+    "score": 6,
+    "ingredients": {
+      "herbs": 1,
+      "tomato": 1,
+      "cheese": 2,
+      "fuel": 2
+    }
+  },
+  {
+    "name": "Veggie Lasagna",
+    "level": 4,
+    "score": 8,
+    "ingredients": {
+      "tomato": 1,
+      "cheese": 1,
+      "flour": 1,
+      "carrot": 2,
+      "onion": 2,
+      "fuel": 7
+    }
+  },
+  {
+    "name": "Sous Vide Cheesecake",
+    "level": 4,
+    "score": 8,
+    "ingredients": {
+      "lemon": 1,
+      "butter": 1,
+      "cheese": 1,
+      "fuel": 3
+    }
+  },
+  {
+    "name": "Sous Vide Carrot Stew",
+    "level": 4,
+    "score": 8,
+    "ingredients": {
+      "herbs": 1,
+      "butter": 1,
+      "carrot": 2,
+      "potato": 1,
+      "ginger": 1,
+      "fuel": 5
+    }
+  },
+  {
+    "name": "Mushroom Rissotto",
+    "level": 4,
+    "score": 10,
+    "ingredients": {
+      "herbs": 1,
+      "butter": 1,
+      "rice": 1,
+      "mushroom": 2,
+      "garlic": 1,
+      "fuel": 5
+    }
+  },
+  {
+    "name": "Bean Stuffed Peppers",
+    "level": 4,
+    "score": 8,
+    "ingredients": {
+      "herbs": 1,
+      "rice": 1,
+      "pepper": 2,
+      "beans": 1,
+      "corn": 1,
+      "fuel": 5
+    }
+  },
+  {
+    "name": "Zesty Seared Mushrooms",
+    "level": 4,
+    "score": 7,
+    "ingredients": {
+      "herbs": 2,
+      "garlic": 1,
+      "butter": 1,
+      "mushroom": 2,
+      "fuel": 4
+    }
+  },
+  {
+    "name": "Potato Pierogi",
+    "level": 4,
+    "score": 7,
+    "ingredients": {
+      "butter": 1,
+      "potato": 2,
+      "egg": 1,
+      "flour": 1,
+      "fuel": 5
+    }
+  },
+  {
+    "name": "Fried Rice",
+    "level": 4,
+    "score": 7,
+    "ingredients": {
+      "pepper": 1,
+      "egg": 1,
+      "rice": 1,
+      "onion": 1,
+      "fuel": 3
+    }
+  },
+  {
+    "name": "Pan Fried Spinach",
+    "level": 4,
+    "score": 7,
+    "ingredients": {
+      "garlic": 1,
+      "butter": 1,
+      "spinach": 2,
+      "onion": 1,
+      "fuel": 4
     }
   }
 ]
