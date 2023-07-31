@@ -63,7 +63,10 @@ def get_recipes_from_json():
             recipes_json = json.load(f)
 
         for recipe in recipes_json:
-            recipes.append(Recipe(recipe['name'], recipe['ingredients'], recipe['level']))
+            recipes.append(Recipe(recipe['name'], recipe['ingredients'], recipe['level'], recipe['score']))
+            
+        # Sort the list of recipes in score order
+        recipes.sort(key=lambda r: r.score, reverse=True)   
             
     except Exception:
         print("> Error when reading the 'recipes.json' file, please ensure this file is populated (recipes in repository should be up-to-date)")
