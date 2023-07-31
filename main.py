@@ -1,26 +1,53 @@
 from recipe import Recipe
 import json
 
-def find_recipes_with_ingredients(recipes:[Recipe], available_ingredients, level):
+def has_ingredients(recipe:Recipe, user_ingredients:dict, user_level:int):
+    """ With the given recipe, this will return true if the user can create the recipe if they have the ingredients and level
+    
+    Args:
+        recipe (Recipe): Instance of 'Recipe' (contains 'name', 'ingredients' and 'level')
+        user_ingredients (dict): List of ingredients which the user currently has (read from 'user_data.json')
+        user_level (int): Users current level, this will be checked against the recipes
+
+    Returns:
+        boolean: True if the user can create the recipe
+    """
+    ingredients = recipe.ingredients
+    return all(ingredient in user_ingredients and
+               user_ingredients[ingredient] >= amount and
+               recipe.level <= user_level for ingredient, amount in ingredients.items())
+
+
+def find_recipes_with_ingredients(recipes:[Recipe], available_ingredients:dict, level:int):
     """Searches the given recipes and returns recipes which are viable with the given ingredients and level
 
     Args:
         recipes ([Recipe]): List of the class 'Recipe' (contains 'name', 'ingredients' and 'level')
-        available_ingredients ({}): List of ingredients which the user currently has (read from 'user_data.json')
+        available_ingredients (dict): List of ingredients which the user currently has (read from 'user_data.json')
         level (int): Users current level, this will be checked against the recipes
 
     Returns:
         [Recipe]: List of recipes which the user can create with the given ingredients
     """
-    matching_recipes = []
+    matching_recipes = {}
     for recipe in recipes:
-        ingredients = recipe.ingredients
-        if all(ingredient in available_ingredients and
-               available_ingredients[ingredient] >= amount and
-               recipe.level <= level for ingredient, amount in ingredients.items()):
-            # Remove ingredients from list to ensure all that is returned is able to create 
+
+        while has_ingredients(recipe, available_ingredients, level):
+            if recipe.name in matching_recipes:
+                matching_recipes[recipe.name] += 1
+            else:
+                matching_recipes[recipe.name] = 1
+                  
+            # Remove ingredients from list to ensure all that is returned is able to create       
+            for ingredient in recipe.ingredients:      
+                recipe_amount = recipe.ingredients[ingredient]
+                current_amount = available_ingredients[ingredient]
+                available_ingredients[ingredient] = current_amount - recipe_amount
+                
+                if available_ingredients[ingredient] == 0:
+                        available_ingredients.pop(ingredient)
             
-            matching_recipes.append(recipe.name)
+            
     return matching_recipes
 
 
@@ -74,8 +101,8 @@ def main():
 
         if matching_recipes:
             print("You can make the following recipes:")
-            for recipe in matching_recipes:
-                print("- " + recipe)
+            for recipe, amount in matching_recipes.items():
+                print(f"- {recipe} x {amount}")
         else:
             print("> You don't have enough ingredients to make any recipe.") 
 
